@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap');
+
+html {
+    body {
+        color: whitesmoke;
+        font-family: Gluten, Helvetica, Verdana, Sans-Serif;
+        font-size: x-large;
+
+        position: relative;
+
+        background-color: black;
+
+        margin: 0;
+        padding: 0;
+
+        overflow: hidden;
+
+        canvas#stars {
+            position: absolute;
+
+            margin: 0;
+            padding: 0;
+
+            background-color: rgb(7, 7, 7);
+        }
+
+        div.mainContainer {
+            width: 50vw;
+            height: fit-content;
+
+            position: absolute;
+            left: 0;
+            right: 0;
+            
+            text-align: center;
+
+            margin: 7vh auto;
+            padding: 3vh 3vw;
+
+            z-index: 333;
+            pointer-events: none;
+
+            div.scrollList {
+                width: 50vw;
+                height: 50vh;
+
+                border-radius: 33px;
+
+                margin: 3vh auto;
+
+                overflow-x: auto;
+                overflow-y: hidden;
+                white-space: nowrap;
+                pointer-events: all;
+
+                img {
+                    height: 100%;
+
+                    display: inline-block;
+                    position: relative;
+
+                    z-index: 10;
+                }
+            }
+        }
+    }
+}
